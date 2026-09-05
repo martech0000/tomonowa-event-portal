@@ -1,0 +1,4 @@
+/* Price stays neutral; the gradient is reserved for the single conversion action. */
+.card-price,.card-price.standard{background:#201f1c}
+.apply-button,.booking-card.campaign-card .apply-button{background:linear-gradient(105deg,#42234e,#9b3d79)}
+.apply-button:hover,.booking-card.campaign-card .apply-button:hover{background:linear-gradient(105deg,#542861,#b8458b)}
