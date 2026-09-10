@@ -2,3 +2,7 @@
 .card-price,.card-price.standard{background:#201f1c}
 .apply-button,.booking-card.campaign-card .apply-button{background:linear-gradient(105deg,#42234e,#9b3d79)}
 .apply-button:hover,.booking-card.campaign-card .apply-button:hover{background:linear-gradient(105deg,#542861,#b8458b)}
+.booking-card-head:has(.capacity-notice){flex-wrap:wrap;align-items:center}
+.booking-card-head>.capacity-notice{flex:0 0 auto;padding:0;border:0;text-align:right}
+.capacity-notice strong{display:block;font-size:20px;line-height:1.3;color:#302a32}
+.capacity-notice small{display:block;margin-top:5px;font-size:14px;font-weight:500;line-height:1.5;color:#655f58}
