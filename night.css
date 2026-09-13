@@ -1,119 +1,121 @@
-/* Night palette. Layout and the real venue hero photograph stay in renewal.css. */
+/* Approved B palette: black and ice blue. Layout and the real venue hero photograph stay in renewal.css. */
 :root {
   color-scheme: dark;
-  --ink: #f5f1ee;
-  --muted: #b7b0c1;
+  --paper: #f0f4f5;
+  --gold: #8ec9e6;
+  --ink: #f0f4f5;
+  --muted: #aebcc6;
   --line: #ffffff24;
-  --green: #422c52;
-  --deep: #100e16;
-  --white: #1a1722;
-  --lime: #e9badb;
-  --night: #100e16;
-  --night-panel: #1a1722;
-  --night-text: #cec6d3;
-  --night-accent: #eebba3;
+  --green: #253f50;
+  --deep: #101418;
+  --white: #1d2831;
+  --lime: #8ec9e6;
+  --night: #101418;
+  --night-panel: #1d2831;
+  --night-text: #c4d0d8;
+  --night-accent: #8ec9e6;
 }
 body { background: var(--night); }
-::selection { background: #885b95; color: #fff; }
-a:focus-visible, summary:focus-visible { outline-color: #f2bd9c; }
-.skip-link { background: #272032; color: #fff; }
+::selection { background: #8ec9e6; color: #10222d; }
+a:focus-visible, summary:focus-visible { outline-color: #8ec9e6; }
+.skip-link { background: #1d2831; color: #fff; }
 .nav-cta { background: #ffffff09; border-color: #ffffff65; }
 .button-cream, .button-green, .mobile-booking a {
-  background: linear-gradient(110deg, #73509e, #a05283 58%, #ad5b72);
-  color: #fff;
-  box-shadow: inset 0 0 0 1px #ffffff20, 0 7px 26px #08050e33;
+  background: linear-gradient(110deg, #b6e2f5, #8ec9e6 58%, #77b9da);
+  color: #10222d;
+  box-shadow: inset 0 0 0 1px #ffffff20, 0 7px 26px #050d1433;
 }
 .button-cream:hover, .button-green:hover, .mobile-booking a:hover {
-  background: linear-gradient(110deg, #8860b8, #b15d92 58%, #c16c80);
+  background: linear-gradient(110deg, #ccecf9, #a7dcf3 58%, #8ccdeb);
 }
 .next-event {
-  background: linear-gradient(105deg, #18131f, #2b1d35 60%, #35202a);
+  background: linear-gradient(105deg, #121b22, #203340 60%, #172c39);
   border-block: 1px solid #ffffff19;
 }
-.next-event:hover { background: linear-gradient(105deg, #201827, #392544 60%, #452b37); }
+.next-event:hover { background: linear-gradient(105deg, #192630, #2a4352 60%, #203c4e); }
 .live-dot, .featured .event-status:before {
-  background: #efba9c;
-  box-shadow: 0 0 12px #efba9c80;
+  background: #8ec9e6;
+  box-shadow: 0 0 12px #8ec9e680;
 }
 .about {
-  background: radial-gradient(ellipse at 85% 30%, #57334b38, transparent 52%), #100e16;
+  background: radial-gradient(ellipse at 85% 30%, #38617b38, transparent 52%), #101418;
 }
 .about-copy>p:not(.eyebrow) { color: var(--night-text); }
 .connection-photo img { border-radius: 18px; border: 1px solid #ffffff18; }
-.connection-photo figcaption, .cheers-photo figcaption { color: #bcb2c1; }
-.cheers-photo { background: #241c2b; border: 1px solid #ffffff20; box-shadow: 0 20px 48px #0006; }
-.hand-note { color: #d7aac8; }
-.orbit-mark i { border-color: #ba85ca70; box-shadow: 0 0 25px #9c5db912; }
-.text-link { border-color: #b5a3bc80; }
+.connection-photo figcaption, .cheers-photo figcaption { color: #adbec9; }
+.cheers-photo { background: #1d2831; border: 1px solid #ffffff20; box-shadow: 0 20px 48px #0006; }
+.hand-note { color: #a8d4eb; }
+.orbit-mark i { border-color: #8ec9e670; box-shadow: 0 0 25px #73b7dc12; }
+.text-link { border-color: #8eafc480; }
 .word-ribbon {
-  background: linear-gradient(90deg, #1e1626, #302036, #241823);
-  border-color: #c49ad333;
-  color: #d2b2d9;
+  background: linear-gradient(90deg, #15212a, #243744, #192a35);
+  border-color: #8ec9e633;
+  color: #badbea;
 }
-.word-ribbon i { color: #e5b393; }
-.events { background: #15121c; }
-.event-area { margin-top: 18px; font-size: 14px; color: #efc3a7; }
-.event-area span { color: #bdb2c7; margin-left: 18px; font-size: 12px; }
+.word-ribbon i { color: #8ec9e6; }
+.events { background: #111a21; }
+.event-area { margin-top: 18px; font-size: 14px; color: #a8d8ef; }
+.event-area span { color: #b6c6d0; margin-left: 18px; font-size: 12px; }
 .campaign {
-  background: radial-gradient(ellipse at 90% 110%, #b86e433d, transparent 65%), linear-gradient(115deg, #33203e, #462d4a 55%, #342030);
-  border-color: #af85b855;
+  background: radial-gradient(ellipse at 90% 110%, #589ec13d, transparent 65%), linear-gradient(115deg, #1d3547, #2c5168 55%, #1c3342);
+  border-color: #8ec9e655;
   box-shadow: 0 16px 44px #0002;
 }
-.campaign-tag { background: #edc3a7; color: #2a172c; }
-.campaign-price del { color: #c6b5cc; }
-.campaign-price p { color: #e2c6d9; }
-.campaign-star { color: #d39bbf; opacity: .18; }
-.event-card { background: var(--night-panel); border-color: #57445f; }
-.event-card.featured { border-color: #b287be; box-shadow: 0 0 35px #9c63ab12; }
+.campaign-tag { background: #a8d8ef; color: #10222d; }
+.campaign-price del { color: #bbcedb; }
+.campaign-price p { color: #cee5f1; }
+.campaign-star { color: #a8d8ef; opacity: .18; }
+.event-card { background: var(--night-panel); border-color: #415d70; }
+.event-card.featured { border-color: #8ec9e6; box-shadow: 0 0 35px #75b9dc12; }
 .ticket-top { background: #ffffff03; border-color: #ffffff1c; }
-.event-status { color: #c3b4cf; }
-.featured .event-status { color: #f0c6ae; }
-.ticket-id { color: #b4a6c1; }
-.event-date time span { color: #bd8ec9; }
-.event-date>span { color: #c7bbcF; }
-.event-copy { color: #c9bfce; }
-.event-tags span { border-color: #ffffff22; color: #d5cbdc; background: #ffffff04; }
+.event-status { color: #b8ccd9; }
+.featured .event-status { color: #a8d8ef; }
+.ticket-id { color: #a7bdcb; }
+.event-date time span { color: #8ec9e6; }
+.event-date>span { color: #bdced9; }
+.event-copy { color: #c2d0d9; }
+.event-tags span { border-color: #ffffff22; color: #d2dfe7; background: #ffffff04; }
 .price-row { border-color: #ffffff20; }
-.price-row small { color: #c5b9cf; }
-.price-row>span { color: #d4b6d4; }
-.ticket-bottom { border-color: #64506c; }
-.ticket-bottom:before, .ticket-bottom:after { background: #15121c; border-color: #57445f; }
-.featured .ticket-bottom:before, .featured .ticket-bottom:after { border-color: #b287be; }
-.ticket-bottom:before, .featured .ticket-bottom:before { border-left-color: #15121c; }
-.ticket-bottom:after, .featured .ticket-bottom:after { border-right-color: #15121c; }
-.ticket-bottom>small { color: #b3a6bf; }
+.price-row small { color: #bdced9; }
+.price-row>span { color: #b9daeb; }
+.ticket-bottom { border-color: #4d6b7f; }
+.ticket-bottom:before, .ticket-bottom:after { background: #111a21; border-color: #415d70; }
+.featured .ticket-bottom:before, .featured .ticket-bottom:after { border-color: #8ec9e6; }
+.ticket-bottom:before, .featured .ticket-bottom:before { border-left-color: #111a21; }
+.ticket-bottom:after, .featured .ticket-bottom:after { border-right-color: #111a21; }
+.ticket-bottom>small { color: #a9bdcb; }
 .past-events { border-color: #ffffff22; }
-.experience { background: radial-gradient(ellipse at 100% 60%, #69364640, transparent 55%), #1c1423; }
-.experience-lead, .promise p { color: #d0c3d4; }
-.promise>span { color: #e7b598; }
-.light-link { color: #e4b9db; border-color: #a987af; }
-.flow { background: #100e16; }
+.experience { background: radial-gradient(ellipse at 100% 60%, #36688940, transparent 55%), #17242e; }
+.experience-lead, .promise p { color: #c7d6e0; }
+.promise>span { color: #8ec9e6; }
+.light-link { color: #b2dff3; border-color: #789fb5; }
+.flow { background: #101418; }
 .flow-grid li { border-color: #ffffff24; }
-.step-no { color: #d6a2ce; }
-.step-no i { color: #e0ad92; }
+.step-no { color: #8ec9e6; }
+.step-no i { color: #8ec9e6; }
 .flow li p { color: var(--night-text); }
-.venue { background: linear-gradient(125deg, #1a1520, #292033); }
-.venue figcaption { background: #130e1ac9; }
-.venue-name { color: #f1dfec; }
-.venue-name span, .venue dt { color: #bba8c5; }
+.venue { background: linear-gradient(125deg, #16212a, #233846); }
+.venue figcaption { background: #0e1a23c9; }
+.venue-name { color: #e6f1f6; }
+.venue-name span, .venue dt { color: #b0c5d2; }
 .venue dl>div { border-color: #ffffff24; }
 .venue-copy>p:not(.eyebrow):not(.venue-name) { color: var(--night-text); }
-.faq { background: #100e16; }
-.faq-list summary:before { color: #d1a5d8; }
+.faq { background: #101418; }
+.faq-list summary:before { color: #8ec9e6; }
 .faq-list details p { color: var(--night-text); }
 .closing {
-  background: radial-gradient(ellipse at 15% 5%, #6e3d914f, transparent 55%), radial-gradient(ellipse at 95% 100%, #bb724954, transparent 53%), linear-gradient(125deg, #1b1027, #3b2346 55%, #261c2a);
-  border-top: 1px solid #d8a7e32b;
+  background: radial-gradient(ellipse at 15% 5%, #3c74974f, transparent 55%), radial-gradient(ellipse at 95% 100%, #5498ba40, transparent 53%), linear-gradient(125deg, #11212e, #244659 55%, #192c38);
+  border-top: 1px solid #8ec9e62b;
 }
-.closing>p:not(.eyebrow) { color: #decfdf; }
-.closing-sign { color: #e4b797; }
-.closing-rings i { border-color: #e3add938; }
-footer { background: #0c0a10; color: #eee4f0; border-top: 1px solid #ffffff14; }
-footer p, .footer-right small { color: #afa0b9; }
-.mobile-booking { background: #15111cee; border-color: #7d588a70; box-shadow: 0 -8px 28px #0005; backdrop-filter: blur(16px); }
-.mobile-booking small { color: #c2b1cb; }
-.mobile-booking strong { color: #f4eaf5; }
-.booking-closed { background: #302937; color: #d3c8da; }
+.closing>p:not(.eyebrow) { color: #d3e3ed; }
+.closing-sign { color: #a8d8ef; }
+.closing-rings i { border-color: #8ec9e638; }
+footer { background: #0b1014; color: #e7f0f5; border-top: 1px solid #ffffff14; }
+footer p, .footer-right small { color: #9fb5c3; }
+.mobile-booking { background: #111d26ee; border-color: #77b9da70; box-shadow: 0 -8px 28px #0005; backdrop-filter: blur(16px); }
+.mobile-booking small { color: #b1c8d7; }
+.mobile-booking strong { color: #edf6fb; }
+.booking-closed { background: #293b48; color: #c3d3df; }
 @media(max-width:759px) {
   .events .section-heading { display: block; }
   .events .month-label { display: flex; align-items: baseline; gap: 12px; margin-top: 18px; text-align: left; }
