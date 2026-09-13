@@ -45,3 +45,28 @@
     document.querySelector('.mobile-booking a').firstChild.textContent = 'イベント情報 ';
   }
 })();
+
+// Native horizontal scrolling also works with touch and the keyboard.
+(() => {
+  const rail = document.getElementById('voiceRail');
+  if (!rail) return;
+  const buttons = [...document.querySelectorAll('[data-voice-direction]')];
+  const updateControls = () => {
+    const end = rail.scrollWidth - rail.clientWidth;
+    buttons.forEach(button => {
+      button.disabled = Number(button.dataset.voiceDirection) < 0
+        ? rail.scrollLeft <= 2 : rail.scrollLeft >= end - 2;
+    });
+  };
+  buttons.forEach(button => button.addEventListener('click', () => {
+    const card = rail.querySelector('article');
+    const distance = card.getBoundingClientRect().width + parseFloat(getComputedStyle(rail).columnGap);
+    rail.scrollBy({
+      left: Number(button.dataset.voiceDirection) * distance,
+      behavior: matchMedia('(prefers-reduced-motion: reduce)').matches ? 'instant' : 'smooth'
+    });
+  }));
+  rail.addEventListener('scroll', updateControls, { passive: true });
+  new ResizeObserver(updateControls).observe(rail);
+  updateControls();
+})();

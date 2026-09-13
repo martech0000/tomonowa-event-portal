@@ -116,6 +116,33 @@ footer p, .footer-right small { color: #9fb5c3; }
 .mobile-booking small { color: #b1c8d7; }
 .mobile-booking strong { color: #edf6fb; }
 .booking-closed { background: #293b48; color: #c3d3df; }
+.voices { background: linear-gradient(125deg, #121d25, #1d303e); }
+.voices .section-heading { align-items: center; }
+.voices-sample { display: inline-block; vertical-align: middle; padding: 5px 9px; border: 1px solid #8ec9e655; color: #badbea; font: 11px/1.5 var(--sans); letter-spacing: .03em; }
+.voices-note, .voices-hint { color: #b6c6d0; font-size: 12px; }
+.voices-note { margin-top: 12px; }
+.voices-hint { margin-top: 30px; }
+.voices-hint span { margin-left: 12px; color: #8ec9e6; }
+.voice-controls { display: flex; gap: 10px; flex-shrink: 0; }
+.voice-arrow { width: 44px; height: 44px; border: 1px solid #8ec9e680; border-radius: 50%; background: #101a22; color: #b6e2f5; font: 22px var(--eng); cursor: pointer; }
+.voice-arrow:hover { background: #8ec9e6; color: #10222d; }
+.voice-arrow:disabled { opacity: .35; cursor: default; background: #101a22; color: #b6e2f5; }
+.voice-arrow:focus-visible, .voice-rail:focus-visible { outline: 3px solid #8ec9e6; outline-offset: 5px; }
+.voice-rail { display: flex; gap: 20px; overflow-x: auto; overscroll-behavior-x: contain; scroll-snap-type: x mandatory; scroll-padding-inline: 1px; scrollbar-width: thin; scrollbar-color: #709bb5 #101a22; margin-top: 18px; padding: 4px 1px 20px; }
+.voice-rail article { flex: 0 0 350px; display: flex; flex-direction: column; padding: 28px; border: 1px solid #456174; background: #17242e; scroll-snap-align: start; }
+.voice-rail article>span { font: 11px var(--eng); letter-spacing: .12em; color: #8ec9e6; }
+.voice-rail h3 { margin: 25px 0 15px; font: 500 12px/1.8 var(--sans); color: #e1eef5; }
+.voice-rail article>p { font: 500 16px/2 var(--serif); color: #f0f4f5; }
+.voice-rail small { margin-top: auto; padding-top: 24px; color: #aebfca; font-size: 10px; }
+@media(max-width:759px) {
+  .voices .section-heading { align-items: flex-start; flex-wrap: wrap; }
+  .voices-sample { font-size: 10px; }
+  .voices-note { font-size: 11px; }
+  .voices-hint { margin-top: 24px; font-size: 11px; }
+  .voice-rail { gap: 14px; }
+  .voice-rail article { flex-basis: min(300px, 88%); padding: 22px; }
+  .voice-rail article>p { font-size: 15px; }
+}
 @media(max-width:759px) {
   .events .section-heading { display: block; }
   .events .month-label { display: flex; align-items: baseline; gap: 12px; margin-top: 18px; text-align: left; }
