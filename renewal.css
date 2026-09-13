@@ -20,4 +20,7 @@
 @media(max-width:360px){.about-copy h2{font-size:27px}}
 @media(max-width:360px){.event-grid{grid-template-columns:minmax(0,1fr)}.event-card{min-width:0}.ticket-body,.ticket-top,.ticket-bottom{padding-inline:17px}.event-date{gap:12px}.event-date time{font-size:50px}.event-date>span{font-size:10px}.price-row{flex-wrap:wrap;gap:12px 25px}.price-row>span{flex-basis:100%;text-align:left;margin:0}.price-row>span br{display:none}.ticket-bottom>small{font-size:8px}.event-card .button{font-size:11px;padding-inline:14px}}
 @media(min-width:760px) and (max-width:1050px){.price-row{flex-wrap:wrap;gap:12px 25px}.price-row>span{flex-basis:100%;text-align:left;margin:0;font-size:9px}.price-row>span br{display:none}}
+.event-tags{flex-wrap:wrap}.venue-intro{margin-top:20px}.venue-name{font-size:30px}.flow h3{font-size:22px;line-height:1.6}
+@media(max-width:1050px){.flow h3{font-size:20px}.venue-name{font-size:27px}}
+@media(max-width:360px){.flow h3{font-size:19px}.events .section-heading{display:block}.events .month-label{display:flex;align-items:baseline;gap:12px;margin-top:16px;text-align:left}.events .month-label span{margin:0}.campaign h3{font-size:19px}.campaign-price{column-gap:16px}.campaign-price strong{font-size:30px}.campaign-price>div{min-width:0}.campaign-price del{font-size:11px}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*:before,*:after{transition:none!important}.button:hover{transform:none}}
