@@ -1,0 +1,11 @@
+# TOMONOWA image prompts
+
+Mode: built-in image_gen tool. Exact model selection is not exposed; mage2.5 was not selectable.
+
+## connection-v1.webp
+Use case: photorealistic-natural. Asset type: editorial lifestyle photograph for Japanese adult friendship event website TOMONOWA, supporting concept section, NOT documentation of a real venue. Create a beautiful cinematic candid photograph of four Japanese adults clearly aged late 20s to late 30s, two women and two men, casually elegant everyday clothing in ivory, dark olive and charcoal, around a small wooden cocktail table having a relaxed spontaneous laugh. Intimate warm amber evening light, dark olive shadows, subtle analog film grain, authentic expressions, social friendship not dating, editorial magazine art direction. A female face in three-quarter profile in foreground, other smiling faces naturally distributed, glasses of citrus soda and beer on table. Composition wide landscape 3:2, waist-up medium shot, close and human, shallow depth of field with indistinct warm bokeh background, no identifiable architecture, no invented signage or logos, no text, no watermark, anatomically plausible hands, understated Japanese neighborhood social scene, not luxury gala or stock photo posing.
+
+## cheers-v1.webp
+Use case: photorealistic-natural. Asset type: supporting editorial still-life for TOMONOWA adult friendship event website. A cinematic extreme close-up of three glasses meeting for a casual cheers, one clear highball glass with lemon and sparkling water, one small amber beer glass and one clear sparkling citrus drink. Only three adult hands, naturally grasping each glass, cropped wrists enter frame edges. Warm honey amber highlights on condensation and tiny bubbles, dark forest olive and tobacco brown indistinct background with tiny soft bokeh, relaxed Friday night in Tokyo, refined analog film photography, shallow depth of field, beautiful realistic glass reflections, not a product advertisement, no faces, no venue architecture, no text or logos. Portrait 4:5 composition with glasses in central 60%, tasteful warm editorial color grading, natural realistic anatomy.
+
+Both images are fictional concept illustrations, labelled as AI-generated on the page. Actual venue asset assets/picross-hero.png is unmodified.
