@@ -19,7 +19,6 @@
     }
     return !ended;
   });
-  if (now >= Date.parse('2026-09-18T22:30:00+09:00')) document.querySelector('[data-campaign]').hidden = true;
   const next = upcoming[0];
   const dateLabel = document.querySelector('[data-next-date]');
   const mobileLabel = document.querySelector('[data-mobile-date]');

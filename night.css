@@ -66,6 +66,9 @@ a:focus-visible, summary:focus-visible { outline-color: #8ec9e6; }
 .campaign-price p { color: #cee5f1; }
 .campaign-star { color: #a8d8ef; opacity: .18; }
 .event-card { background: var(--night-panel); border-color: #415d70; }
+.event-grid.single-event { grid-template-columns: minmax(0, 620px); justify-content: center; }
+.past-events > div + div { border-top: 1px solid #ffffff22; }
+@media (max-width: 759px) { .event-grid.single-event { grid-template-columns: minmax(0, 1fr); } }
 .event-card.featured { border-color: #8ec9e6; box-shadow: 0 0 35px #75b9dc12; }
 .ticket-top { background: #ffffff03; border-color: #ffffff1c; }
 .event-status { color: #b8ccd9; }
