@@ -133,7 +133,7 @@ footer p, .footer-right small { color: #9fb5c3; }
 .voice-rail { display: flex; gap: 20px; overflow-x: auto; overscroll-behavior-x: contain; scroll-snap-type: x mandatory; scroll-padding-inline: 1px; scrollbar-width: thin; scrollbar-color: #709bb5 #101a22; margin-top: 18px; padding: 4px 1px 20px; }
 .voice-rail article { flex: 0 0 350px; display: flex; flex-direction: column; padding: 28px; border: 1px solid #456174; background: #17242e; scroll-snap-align: start; }
 .voice-rail article>span { font: 11px var(--eng); letter-spacing: .12em; color: #8ec9e6; }
-.voice-rail h3 { margin: 25px 0 15px; font: 600 22px/1.5 var(--serif); color: #e1eef5; }
+.voice-rail h3 { margin: 25px 0 15px; font: 500 12px/1.8 var(--sans); color: #e1eef5; }
 .voice-rail article>p { font: 500 16px/2 var(--serif); color: #f0f4f5; }
 .voice-rail small { margin-top: auto; padding-top: 24px; color: #aebfca; font-size: 10px; }
 .koi-mikuji {
