@@ -153,12 +153,25 @@ footer p, .footer-right small { color: #9fb5c3; }
 .koi-mikuji-meta span { padding: 8px 13px; border: 1px solid #8ec9e65c; color: #c4e8f7; font: 500 12px/1.5 var(--sans); }
 .koi-mikuji-visual { margin: 0; overflow: hidden; border-radius: 8px; box-shadow: 0 28px 70px #0007; }
 .koi-mikuji-visual img { display: block; width: 100%; height: auto; }
+.mikuji-samples { grid-column: 1 / -1; width: 100%; margin-top: 20px; padding-top: 30px; border-top: 1px solid #8ec9e633; }
+.mikuji-samples > p { margin: 0 0 20px; color: #d7eaf3; font: 500 18px/1.7 var(--serif); }
+.mikuji-samples-rail { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 18px; }
+.mikuji-samples-rail a { display: block; min-width: 0; border: 1px solid #8ec9e63d; background: #19252e; color: #e3f1f7; text-decoration: none; transition: transform .2s ease, border-color .2s ease; }
+.mikuji-samples-rail a:hover { transform: translateY(-4px); border-color: #8ec9e6; }
+.mikuji-samples-rail a:focus-visible { outline: 3px solid #8ec9e6; outline-offset: 3px; }
+.mikuji-samples-rail img { display: block; width: 100%; height: auto; }
+.mikuji-samples-rail span { display: flex; justify-content: space-between; gap: 10px; padding: 13px 16px; font: 500 12px/1.5 var(--sans); }
+.mikuji-samples-rail b { color: #8ec9e6; }
 @media(max-width:759px) {
   .koi-mikuji { grid-template-columns: minmax(0, 1fr); gap: 34px; }
   .koi-mikuji h2 { margin: 16px 0 22px; font-size: clamp(36px, 10vw, 52px); }
   .koi-mikuji-copy > p:not(.eyebrow) { font-size: 14px; }
   .koi-mikuji-copy > p.koi-mikuji-lead { font-size: 18px; }
   .koi-mikuji-meta { margin: 22px 0 28px; }
+  .mikuji-samples { margin-top: 0; padding-top: 26px; }
+  .mikuji-samples > p { font-size: 16px; }
+  .mikuji-samples-rail { display: flex; gap: 12px; overflow-x: auto; scroll-snap-type: x mandatory; padding-bottom: 14px; }
+  .mikuji-samples-rail a { flex: 0 0 min(84%, 370px); scroll-snap-align: start; }
   .voices .section-heading { align-items: flex-start; flex-wrap: wrap; }
   .voices-sample { font-size: 10px; }
   .voices-note { font-size: 11px; }
