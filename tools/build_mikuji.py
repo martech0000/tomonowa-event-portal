@@ -59,7 +59,9 @@ def render_card(card: dict) -> None:
         for row_index, character in enumerate(column):
             y = top_y + row_index * pitch_y
             if character in "、。":
-                draw.text((x + size * 0.18, y - size * 0.14), character, font=font, fill="#090909", anchor="mm")
+                # Noto's horizontal punctuation ink sits in the lower-left of its
+                # em box. Shift the ink to the upper-right of the vertical cell.
+                draw.text((x + size * 0.64, y - size * 0.60), character, font=font, fill="#090909", anchor="mm")
             else:
                 draw.text((x, y), character, font=font, fill="#090909", anchor="mm")
 
@@ -74,10 +76,11 @@ def build_preview() -> None:
     tiles = []
     for number in range(1, 31):
         filename = f"fortune-{number:02d}.png"
+        image_url = f"../assets/mikuji/{filename}" + ("?v=vertical-punctuation-2" if number > 20 else "")
         alt = titles.get(number, f"恋みくじ {number}番")
         tag = "NEW / 恋・友達・人生" if number > 20 else "恋みくじ"
         tiles.append(
-            f'<figure><a href="../assets/mikuji/{filename}"><img src="../assets/mikuji/{filename}" '
+            f'<figure><a href="{image_url}"><img src="{image_url}" '
             f'alt="{html.escape(alt, quote=True)}" loading="lazy"></a>'
             f'<figcaption><span>{number:02d} / {tag}</span>'
             f'{html.escape(alt)}</figcaption></figure>'
@@ -95,7 +98,7 @@ figcaption span{display:block;color:#9cd4ed;font-size:11px;letter-spacing:.08em;
 @media(max-width:700px){main{grid-template-columns:1fr;gap:18px;padding-inline:12px}header{padding-inline:16px}}
 </style></head><body><header><p>REVIEW COPY / 全30枚</p><h1>TOMONOWAみくじ</h1>
 <p>既存の恋みくじ20枚に、恋・友達・人生の一言を10枚追加。画像をタップすると原寸で確認できます。</p>
-<a href="../assets/mikuji/TOMONOWA-mikuji-30.zip" download>30枚をまとめて保存（ZIP）</a></header>
+<a href="../assets/mikuji/TOMONOWA-mikuji-30.zip?v=vertical-punctuation-2" download>30枚をまとめて保存（ZIP）</a></header>
 <main>""" + "\n".join(tiles) + "</main></body></html>"
     (PREVIEW / "index.html").write_text(page, encoding="utf-8")
 
