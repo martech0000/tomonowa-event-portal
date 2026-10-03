@@ -1,0 +1,26 @@
+/* The existing brand page stays intact; only the current event feature changes. */
+.halloween-event { background: #171310; border-block: 1px solid #b976333b; }
+.halloween-event .eyebrow, .halloween-event .event-area { color: #efb778; }
+.event-grid.single-event:has(.halloween-card) { grid-template-columns: minmax(0, 1060px); }
+.halloween-card { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); align-items: center; background: #211b18; }
+.halloween-card.featured { border-color: #bf814e; box-shadow: none; }
+.halloween-flyer { display: block; line-height: 0; align-self: start; }
+.halloween-flyer img { display: block; width: 100%; height: auto; }
+.halloween-event-body { min-width: 0; }
+.halloween-card .event-date time span, .halloween-card.featured .event-status { color: #efb778; }
+.halloween-card.featured .event-status:before { background: #efb778; box-shadow: none; }
+.halloween-card h3 { line-height: 1.7; letter-spacing: .04em; }
+.halloween-card .event-copy { line-height: 2; }
+.halloween-highlights { margin: 24px 0 0; padding-left: 1.25em; color: #dfd4cb; font-size: 12px; line-height: 1.9; }
+.halloween-highlights li + li { margin-top: 9px; }
+.halloween-friend-off { margin-top: 15px; color: #f4c58e; font-size: 12px; font-weight: 600; }
+.halloween-card .ticket-bottom { border-color: #b9763360; }
+.halloween-card .ticket-bottom:before, .halloween-card .ticket-bottom:after { display: none; }
+.halloween-card .button-green { background: #efb778; color: #21140d; box-shadow: none; }
+.halloween-card .button-green:hover { background: #f6ca98; }
+.halloween-card .ticket-bottom>small { color: #c8b9ab; }
+@media(max-width:759px) {
+  .halloween-card { grid-template-columns: minmax(0, 1fr); }
+  .halloween-event .section-heading h2 { font-size: clamp(27px, 7.5vw, 34px); }
+  .halloween-highlights { font-size: 13px; }
+}
