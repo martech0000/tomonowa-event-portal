@@ -1,0 +1,31 @@
+/* Friendship is the concept; Halloween is the next occasion to meet. */
+.hero h1 { font-size:clamp(48px,6vw,82px); line-height:1.35; }
+.hero-lead { font-size:16px; line-height:1.9; }
+.hero-lead span { display:inline-block; }
+.hero-welcome { margin-top:12px; font-size:12px; color:#e2e7eb; }
+.friendship-intro { padding:76px max(54px,calc((100vw - 1120px)/2)); background:#15222c; border-bottom:1px solid #334b5a; scroll-margin-top:80px; }
+.friendship-intro .eyebrow { color:#a0cce2; }
+.friendship-intro__body { display:grid; grid-template-columns:1.2fr 1fr; align-items:center; gap:48px; }
+.friendship-intro h2 { font:500 clamp(28px,3vw,42px)/1.8 var(--serif); color:#f2f6f7; }
+.friendship-intro__body p { font-size:14px; line-height:2.1; color:#c5d2dc; }
+.friendship-intro__body p+p { margin-top:16px; }
+.friendship-intro .text-link { margin-top:24px; }
+.instagram-early { padding-block:24px; }
+.instagram-early__copy h2 { font-size:18px; }
+.instagram-early .instagram-follow__button { min-height:66px; padding-block:12px; }
+.halloween-event .section-heading h2 { font-size:clamp(26px,3.2vw,42px); }
+.event-details-link { display:flex; justify-content:center; align-items:center; gap:18px; margin-top:22px; padding:10px; color:#efc498; font-size:12px; text-decoration:underline; text-underline-offset:5px; }
+.event-details-link:hover { color:#fff; }
+@media(max-width:759px) {
+  .hero { min-height:740px; }
+  .hero h1 { font-size:clamp(42px,11.3vw,68px); }
+  .hero-lead { font-size:14px; }
+  .hero-welcome { font-size:11px; }
+  .friendship-intro { padding:52px 24px; }
+  .friendship-intro__body { grid-template-columns:1fr; gap:24px; }
+  .friendship-intro h2 { font-size:clamp(26px,7.1vw,36px); }
+  .friendship-intro__body p { font-size:13px; }
+  .instagram-early { padding-block:24px; gap:16px; }
+  .instagram-early__copy h2 { font-size:17px; }
+  .halloween-event .section-heading h2 { font-size:clamp(23px,6.3vw,34px); }
+}
