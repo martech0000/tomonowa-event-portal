@@ -1,0 +1,22 @@
+.instagram-follow {
+  --ig-accent: #9ddbef;
+  padding: clamp(52px, 8vw, 88px) 24px;
+  background: #101e27;
+  color: #f5f1e8;
+  text-align: center;
+  font-family: "Noto Sans JP", "Hiragino Kaku Gothic ProN", "Yu Gothic", sans-serif;
+}
+.instagram-follow--halloween { --ig-accent: #ffbc62; background: #21150f; }
+.instagram-follow .instagram-follow__eyebrow { margin: 0 0 18px; color: var(--ig-accent); font-size: 11px; letter-spacing: .22em; }
+.instagram-follow h2 { margin: 0; font-family: "Shippori Mincho", "Yu Mincho", serif; font-size: clamp(27px, 5vw, 40px); line-height: 1.6; letter-spacing: .04em; }
+.instagram-follow .instagram-follow__intro { margin: 22px 0 28px; font-size: 14px; line-height: 2; color: #eee8df; }
+.instagram-follow__button { display: flex; align-items: center; gap: 14px; width: min(100%, 390px); min-height: 84px; margin: 0 auto; padding: 16px 20px; border: 1px solid var(--ig-accent); border-radius: 8px; background: #ffffff09; color: #fff; text-decoration: none; text-align: left; transition: background .2s; }
+.instagram-follow__button svg { flex-shrink: 0; color: var(--ig-accent); }
+.instagram-follow__button > span:last-child { margin-left: auto; font-size: 23px; color: var(--ig-accent); }
+.instagram-follow__button strong { display: block; font-size: 14px; line-height: 1.6; }
+.instagram-follow__button small { display: block; margin-top: 4px; font-size: 12px; color: #d2d7da; }
+.instagram-follow__button:hover { background: #ffffff14; }
+.instagram-follow__button:focus-visible { outline: 3px solid var(--ig-accent); outline-offset: 5px; }
+.instagram-follow .instagram-follow__note { margin: 22px 0 0; font-size: 11px; line-height: 1.9; color: #bdc2c5; }
+.instagram-follow__mobile { display: none; }
+@media (max-width: 420px) { .instagram-follow__mobile { display: initial; } .instagram-follow__button { padding: 15px 14px; gap: 10px; } .instagram-follow__button strong { font-size: 13px; } }
