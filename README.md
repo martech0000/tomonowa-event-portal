@@ -24,7 +24,7 @@ GitHub Pages用の静的LPです。OpenAI、DB、サーバー、APIキーは不�
 ## 2026-10-02 開催情報
 
 - 10月2日（金）20:00–22:30、大塚 PICROSS。女性 ¥3,000／男性 ¥6,000。
-- 予約フォーム：`https://docs.google.com/forms/d/e/1FAIpQLSfg_Z_2b7EcacVr3ZAaqW1Y_GvLDzsvqAxaSCqhM0Kl60_P_Q/viewform`
+- 予約フォーム：`https://forms.gle/M9L5nNLjK5UML4WR9`
 - 9月11日・18日・25日は「過去の開催日」に移動。9月の割引キャンペーン表示は終了。
 - 10月2日フォームは9月25日版から複製し、日付・料金を更新。年齢条件と重複メール欄を削除。Googleフォーム標準の回答コピー送信は有効。カスタム自動返信アドオンは複製時に引き継がれるとは限らないため、別途確認が必要。
 
